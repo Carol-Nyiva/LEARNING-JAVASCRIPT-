@@ -1,5 +1,6 @@
 # LEARNING-JAVASCRIPT-
 This is my JAVASCRIPT learning progress 
+
 Day 1: 24th May 2020
 learnt : Variables and Data types
          Variable mutation and type coercion
