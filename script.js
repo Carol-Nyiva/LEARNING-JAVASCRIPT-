@@ -116,3 +116,25 @@ console.log(typeof y); //Undefined
 
 //OPERATOR PRECEDENCE
 
+var now,yearJohn,fullAge;
+now = 2020;
+yearJohn=1989;
+fullAge=18;
+
+var isFullAge=now - yearJohn >= fullAge;  //Multiple operators
+console.log(isFullAge);
+
+var ageJohn,ageMark,average;
+ageJohn= 2018 - yearJohn;
+ageMark=35;
+average = ageJohn + ageMark /2;    //  precedence in action
+console.log(average);
+
+average= (ageJohn + ageMark) /2; //Grouping
+console.log(average);
+
+//Multiple assignments
+var x,y;
+x = y = (3 +5) * 4 - 6; //HOW THIS WILL WORK , // 3+5=8 //8*4=32 //32-6 = 26 
+                        // Then it will assign 26 to y then x will be assigned from y
+console.log(x,y);   
