@@ -10,15 +10,34 @@ In the end, John would like to have 2 arrays:
 
 Note: To calculate 20% of a value, simply multiply it with 20/100 = 0.2 */
 
-
-
-
-
-
-
-
-function greetings(name='follower')
+ function CalculateBill (Bill)
 {
-return console.log('Hello ' + name + '. Lighten That Button 😍 ');  
+ if (Bill<50)
+ {
+     var tip = Bill*0.2;
+    return tip;
+ }
+ else if (Bill>=50 && Bill <=200)
+ {
+     var tip = Bill * 0.15;
+     return tip;
+ }
+ else if (Bill>200)
+ {
+     var tip = Bill * 0.1;
+     return tip;
+ }
 }
-greetings(); 
+
+
+
+console.log('Tip is ',CalculateBill(268),'Dollars');
+
+const TotalBill1 = CalculateBill(124) + 124;
+const TotalBill2 = CalculateBill(48) + 48;
+const TotalBill3 = CalculateBill(268) + 268;
+
+let Bills = [ CalculateBill(124), CalculateBill(48),CalculateBill(268)];
+console.log(Bills);
+let TotalBills = [TotalBill1,TotalBill2,TotalBill3];
+console.log(TotalBills);
